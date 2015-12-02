@@ -7,4 +7,5 @@ var server = http.createServer(function(request, response) {
 
 server.listen(8000);
 
+//test
 console.log("Server is running at http://localhost:8000");
