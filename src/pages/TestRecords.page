@@ -1,0 +1,32 @@
+<apex:page controller="TestRecordsControler" readonly="true">
+<apex:pageBlock mode="detail" id="records" title="Title">
+		<apex:pageBlockSection columns="1" title="Title" collapsible="false" rendered="{!(responseData.size != 0)}">
+			<apex:pageBlockTable value="{!responseData}" var="data" >
+				<apex:column >
+					<apex:facet name="header">Name</apex:facet>
+					<apex:outputText value="{!data.Name}"/>
+				</apex:column>
+				<apex:column >
+					<apex:facet name="header">Company</apex:facet>
+					<apex:outputText value="{!data.Company}"/>
+				</apex:column>
+				<apex:column >
+					<apex:facet name="header">Title</apex:facet>
+					<apex:outputText value="{!data.Title}"/>
+				</apex:column>
+				<apex:column >
+					<apex:facet name="header">Education</apex:facet>
+					<apex:outputText value="{!data.Education}"/>
+				</apex:column>
+				<apex:column >
+					<apex:facet name="header">CreatedDate</apex:facet>
+					<apex:outputText value="{!data.CreatedDate}"/>
+				</apex:column>
+				<apex:column >
+					<apex:facet name="header">Email</apex:facet>
+					<apex:outputText value="{!data.Email}"/>
+				</apex:column>
+			</apex:pageBlockTable>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>
