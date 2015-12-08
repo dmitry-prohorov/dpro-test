@@ -1,5 +1,5 @@
 global with sharing class JSPWebService {
-//ooooooooooooooooooo
+//oooooooooooooooooo
 	public class WebServiceException extends Exception {
 	}
 
